@@ -1,0 +1,53 @@
+main {
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem - 6rem);
+    padding: 1rem 0;
+
+    @media (max-width: 599px) {
+        margin-top: 56px;
+        min-height: calc(100vh - 56px - 6rem);
+        padding: 1rem;
+    }
+}
+
+header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+    .top-toolbar {
+        background-color: #FFFFFF;
+    }
+
+    .header-content {
+        width: 100%;
+        
+        .site-title {
+            font-family: 'Arvo', serif;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    height: 6rem;
+    padding: 1rem;
+    width: 100%;
+
+    .footer-links {
+        line-height: 150%;
+
+        a {
+            color: #FFFFFF;
+        }
+
+        .footer-link-divider {
+            margin: auto .5rem;
+        }
+    }
+}

@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Kernohan Wedding!';
+  /**Application title. Used in Header */
+  public title = 'Kernohan Wedding!';
+  
+  /**Header links */
+  public links = [
+    {
+        label: 'Event',
+        anchor: 'event'
+    },
+    {
+        label: 'RSVP',
+        anchor: 'rsvp'
+    },
+    {
+        label: 'Contact',
+        anchor: 'contact'
+    }
+  ];
 }

@@ -1,7 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<mat-drawer-container autosize>
+<!-- ============================== -->
+<!-- ========== Side Nav ========== -->
+<!-- ============================== -->
+  <mat-drawer #drawer mode="over" [(opened)]="isExpanded" fxHide.gt-xs class="side-menu">
+    <nav fxLayout="column" fxLayoutAlign="space-between center">
+      <button mat-button *ngFor="let link of links; let i=index"
+        (click)="isExpanded = false"
+        [routerLink]="link.link">{{link.label}}
+      </button>
+    </nav>
+  </mat-drawer>
 
-<router-outlet></router-outlet>
+<!-- ============================ -->
+<!-- ========== Header ========== -->
+<!-- ============================ -->
+  <header>
+    <mat-toolbar role="banner" class="top-toolbar mat-elevation-z3">
+      <div class="header-content" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="32px">
+          <h1 class="site-title">{{title}}</h1>
+
+          <nav fxFlex fxHide.xs fxLayout="row" fxLayoutAlign="end center">
+            <button mat-button *ngFor="let link of links; let i=index"
+              (click)="isExpanded = false"
+              routerLink="/"
+              [fragment]="link.anchor">{{link.label}}
+            </button>
+          </nav>
+
+        <button type="button" mat-icon-button (click)="drawer.toggle()" fxHide.gt-xs aria-label="Toggle menu">
+          <mat-icon aria-label="Toggle menu">menu</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+  </header>
+
+<!-- ========================== -->
+<!-- ========== Main ========== -->
+<!-- ========================== -->
+  <main #main tabindex="-1" fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex="80%" fxFlex.sm="90%" fxFlex.xs="100%">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+<!-- ============================ -->
+<!-- ========== Footer ========== -->
+<!-- ============================ -->
+  <footer fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="32px" fxLayoutGap.sm="4px" fxLayoutGap.xs="4px">
+      <div class="footer-links">
+          <a href="https://www.michigan.gov/mdhhs/0,5885,7-339-71551_2945_5103-14811--,00.html">Contact Us</a>
+          <span class="footer-link-divider">|</span>
+          <a href="https://www.michigan.gov/mdhhs/">MDHHS Home</a>
+          <span class="footer-link-divider">|</span>
+          <a href="https://www.michigan.gov/mdhhs/0,5885,7-339-71551_2945_5103---,00.html">MDHHS Lab</a>
+          <span class="footer-link-divider">|</span>
+          <a href="https://www.michigan.gov/">MI.gov</a>
+      </div>
+    </div>
+    <p>Copyright 2019 State of Michigan</p>
+  </footer>
+</mat-drawer-container>
