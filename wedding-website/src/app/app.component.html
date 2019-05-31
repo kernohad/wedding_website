@@ -6,7 +6,8 @@
     <nav fxLayout="column" fxLayoutAlign="space-between center">
       <button mat-button *ngFor="let link of links; let i=index"
         (click)="isExpanded = false"
-        [routerLink]="link.link">{{link.label}}
+        routerLink="/"
+        [fragment]="link.anchor">{{link.label}}
       </button>
     </nav>
   </mat-drawer>
