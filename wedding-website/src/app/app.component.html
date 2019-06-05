@@ -2,7 +2,7 @@
 <!-- ============================== -->
 <!-- ========== Side Nav ========== -->
 <!-- ============================== -->
-  <mat-drawer #drawer mode="over" [(opened)]="isExpanded" fxHide.gt-xs class="side-menu">
+  <mat-drawer #drawer mode="over" position="end" [(opened)]="isExpanded" fxHide.gt-xs class="side-menu">
     <nav fxLayout="column" fxLayoutAlign="space-between center">
       <button mat-button *ngFor="let link of links; let i=index"
         (click)="isExpanded = false"
@@ -17,6 +17,7 @@
 <!-- ============================ -->
   <header>
     <mat-toolbar role="banner" class="top-toolbar mat-elevation-z3">
+      <!-- Nav for large screens -->
       <div class="header-content" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="32px">
           <h1 class="site-title">{{title}}</h1>
 
@@ -28,6 +29,7 @@
             </button>
           </nav>
 
+        <!-- Button for xs screen to show side nav-->
         <button type="button" mat-icon-button (click)="drawer.toggle()" fxHide.gt-xs aria-label="Toggle menu">
           <mat-icon aria-label="Toggle menu">menu</mat-icon>
         </button>

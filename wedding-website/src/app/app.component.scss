@@ -1,24 +1,51 @@
+
+.side-menu {
+    // height: 25%;
+    padding: 1rem;
+    overflow-y: auto;
+    position: fixed;
+    max-height: 100vh;
+    // width: 80vw;
+
+    @media (max-width: 599px) {
+        width: 70vw;
+    }
+
+    @media (min-width: 600px) {
+        width: 30vw;
+    }
+}
+
 main {
     margin-top: 4rem;
     min-height: calc(100vh - 4rem - 6rem);
     padding: 1rem 0;
 
     @media (max-width: 599px) {
-        margin-top: 56px;
         min-height: calc(100vh - 56px - 6rem);
         padding: 1rem;
     }
 }
 
 header {
-    left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
 
+    // background-attachment: fixed;
+    // background-image: url('../assets/images/boston_harbor.jpg');
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 100vh;
+    // position: relative;
+
     .top-toolbar {
         background-color: #FFFFFF;
+        left: 0;
+        position: fixed;
+        top: 0;
     }
 
     .header-content {

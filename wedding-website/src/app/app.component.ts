@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   /**Application title. Used in Header */
-  public title = 'Kernohan Wedding!';
+  public title = 'Dylan & Brooke';
 
   /**Variable that controls side nav open / close */
   public isExpanded = false
