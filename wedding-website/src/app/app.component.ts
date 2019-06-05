@@ -15,6 +15,10 @@ export class AppComponent {
   /**Header links */
   public links = [
     {
+      label: 'About Us',
+      anchor: 'about-us'
+    },
+    {
         label: 'Event',
         anchor: 'event'
     },
@@ -38,4 +42,9 @@ export class AppComponent {
   ngOnInit() {
     this.onWindowScroll();
   }
+
+  public goToSection(section): void {
+    const element = document.getElementById(section);
+    element.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
 }

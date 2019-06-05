@@ -5,9 +5,7 @@
   <mat-drawer #drawer mode="over" position="end" [(opened)]="isExpanded" fxHide.gt-xs class="side-menu">
     <nav fxLayout="column" fxLayoutAlign="space-between center">
       <button mat-button *ngFor="let link of links; let i=index"
-        (click)="isExpanded = false"
-        routerLink="/"
-        [fragment]="link.anchor">{{link.label}}
+        (click)="isExpanded = false; goToSection(link.anchor)">{{link.label}}
       </button>
     </nav>
   </mat-drawer>
@@ -19,13 +17,11 @@
     <mat-toolbar role="banner" class="top-toolbar">
       <!-- Nav for large screens -->
       <div class="header-content" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="32px">
-          <h1 class="site-title">{{title}}</h1>
+          <button mat-button class="site-title" (click)="goToSection('welcome')">{{title}}</button>
 
           <nav fxFlex fxHide.xs fxLayout="row" fxLayoutAlign="end center">
             <button mat-button *ngFor="let link of links; let i=index"
-              (click)="isExpanded = false"
-              routerLink="/"
-              [fragment]="link.anchor">{{link.label}}
+              (click)="isExpanded = false; goToSection(link.anchor)">{{link.label}}
             </button>
           </nav>
 
