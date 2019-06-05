@@ -1,0 +1,15 @@
+.content {
+    background-attachment: fixed;
+    background-image: url('../../../assets/images/boston_harbor.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.welcome-message {
+    color: #0e04ce;
+    font-size: 94px;
+    letter-spacing: 2px;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -27,4 +27,15 @@ export class AppComponent {
         anchor: 'contact'
     }
   ];
+
+  scrollPosition: number;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.scrollPosition = window.pageYOffset;
+  }
+
+  ngOnInit() {
+    this.onWindowScroll();
+  }
 }
