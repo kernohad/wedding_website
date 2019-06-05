@@ -9,9 +9,6 @@ export class AppComponent {
   /**Application title. Used in Header */
   public title = 'Dylan & Brooke';
 
-  /**Variable that controls side nav open / close */
-  public isExpanded = false
-
   /**Header links */
   public links = [
     {

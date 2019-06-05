@@ -2,10 +2,11 @@
 <!-- ============================== -->
 <!-- ========== Side Nav ========== -->
 <!-- ============================== -->
-  <mat-drawer #drawer mode="over" position="end" [(opened)]="isExpanded" fxHide.gt-xs class="side-menu">
+  <mat-drawer #drawer mode="over" position="end" fxHide.gt-xs class="side-menu">
     <nav fxLayout="column" fxLayoutAlign="space-between center">
       <button mat-button *ngFor="let link of links; let i=index"
-        (click)="isExpanded = false; goToSection(link.anchor)">{{link.label}}
+        (click)="drawer.toggle()"
+        (click)="goToSection(link.anchor)">{{link.label}}
       </button>
     </nav>
   </mat-drawer>
@@ -21,7 +22,7 @@
 
           <nav fxFlex fxHide.xs fxLayout="row" fxLayoutAlign="end center">
             <button mat-button *ngFor="let link of links; let i=index"
-              (click)="isExpanded = false; goToSection(link.anchor)">{{link.label}}
+              (click)="goToSection(link.anchor)">{{link.label}}
             </button>
           </nav>
 
