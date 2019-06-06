@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { RsvpComponent } from './components/rsvp/rsvp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    RsvpComponent
   ],
   imports: [
     BrowserModule,
