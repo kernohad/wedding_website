@@ -14,3 +14,42 @@ body, html {
 h1, h2, h3, h4 {
     font-family: 'Arvo', serif;
 }
+
+h2 {
+    font-size: 48px;
+
+    @media (max-width: 600px) {
+        font-size: 32px;
+    }
+
+    @media (max-height: 768px) {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 28px;
+
+    @media (max-width: 600px) {
+        font-size: 24px;
+    }
+
+    @media (max-height: 768px) {
+        font-size: 24px;
+    }
+}
+
+p {
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media (max-height: 768px) {
+        font-size: 16px;
+    }
+}
