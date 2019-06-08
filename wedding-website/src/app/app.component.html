@@ -2,7 +2,7 @@
 <!-- ============================== -->
 <!-- ========== Side Nav ========== -->
 <!-- ============================== -->
-  <mat-drawer #drawer mode="over" position="end" fxHide.gt-xs class="side-menu">
+  <mat-drawer #drawer mode="over" position="end" fxHide.gt-sm class="side-menu">
     <nav fxLayout="column" fxLayoutAlign="space-between center">
       <button mat-button *ngFor="let link of links; let i=index"
         (click)="drawer.toggle()"
@@ -20,14 +20,14 @@
       <div class="header-content" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="32px">
           <button mat-button class="site-title" (click)="goToSection('welcome')">{{title}}</button>
 
-          <nav fxFlex fxHide.xs fxLayout="row" fxLayoutAlign="end center">
-            <button mat-button *ngFor="let link of links; let i=index"
+          <nav fxFlex fxHide.lt-md fxLayout="row" fxLayoutAlign="end center">
+            <button class="menu-item" mat-button *ngFor="let link of links; let i=index"
               (click)="goToSection(link.anchor)">{{link.label}}
             </button>
           </nav>
 
         <!-- Button for xs screen to show side nav-->
-        <button type="button" mat-icon-button (click)="drawer.toggle()" fxHide.gt-xs aria-label="Toggle menu">
+        <button type="button" mat-icon-button (click)="drawer.toggle()" fxHide.gt-sm aria-label="Toggle menu">
           <mat-icon aria-label="Toggle menu">menu</mat-icon>
         </button>
       </div>

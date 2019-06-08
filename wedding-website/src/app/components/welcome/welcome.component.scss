@@ -1,6 +1,9 @@
 .content {
     background-attachment: fixed;
     background-image: url('../../../assets/images/boston_harbor.jpg');
+    background:
+    linear-gradient(rgba(90, 90, 90, 0.6), rgba(90, 90, 90, 0.6)),
+    url('../../../assets/images/boston_harbor.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +12,15 @@
 }
 
 .welcome-message {
-    color: #0e04ce;
+    color: white;
     font-size: 94px;
     letter-spacing: 2px;
+    position: absolute;
+    text-align: center;
+    top: 3rem;
+    width: 100%;
+
+    @media (max-width: 958px) {
+        font-size: 56px;
+    }
 }
