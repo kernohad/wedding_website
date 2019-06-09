@@ -24,8 +24,8 @@ export class AppComponent {
         anchor: 'rsvp'
     },
     {
-        label: 'Contact',
-        anchor: 'contact'
+        label: 'Registry',
+        anchor: 'registry'
     }
   ];
 
