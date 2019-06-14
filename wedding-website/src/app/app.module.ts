@@ -11,6 +11,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { RsvpComponent } from './components/rsvp/rsvp.component';
 import { EventComponent } from './components/event/event.component';
 import { RegistryComponent } from './components/registry/registry.component';
+import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistryComponent } from './components/registry/registry.component';
     AboutUsComponent,
     RsvpComponent,
     EventComponent,
-    RegistryComponent
+    RegistryComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,

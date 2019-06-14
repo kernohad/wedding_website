@@ -40,29 +40,21 @@
   <main #main tabindex="-1" fxLayout="row" fxLayoutAlign="center start">
     <div fxFlex="100">
       <router-outlet></router-outlet>
-      <app-welcome></app-welcome>
+      <app-maintenance></app-maintenance>
+      <!-- <app-welcome></app-welcome>
       <app-event></app-event>
       <app-about-us></app-about-us>
       <app-rsvp></app-rsvp>
-      <app-registry></app-registry>
+      <app-registry></app-registry> -->
     </div>
   </main>
 
 <!-- ============================ -->
 <!-- ========== Footer ========== -->
 <!-- ============================ -->
-  <footer fxLayout="column" fxLayoutAlign="center center">
-    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="32px" fxLayoutGap.sm="4px" fxLayoutGap.xs="4px">
-      <div class="footer-links">
-          <a href="https://www.michigan.gov/mdhhs/0,5885,7-339-71551_2945_5103-14811--,00.html">Contact Us</a>
-          <span class="footer-link-divider">|</span>
-          <a href="https://www.michigan.gov/mdhhs/">MDHHS Home</a>
-          <span class="footer-link-divider">|</span>
-          <a href="https://www.michigan.gov/mdhhs/0,5885,7-339-71551_2945_5103---,00.html">MDHHS Lab</a>
-          <span class="footer-link-divider">|</span>
-          <a href="https://www.michigan.gov/">MI.gov</a>
-      </div>
-    </div>
-    <p>Copyright 2019 State of Michigan</p>
+  <footer fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1rem">
+    <p>Contact us!</p>
+    <p>kernohan.wedding@gmail.com</p>
+    <p class="small">Created by Dylan</p>
   </footer>
 </mat-drawer-container>
