@@ -12,6 +12,7 @@ import { RsvpComponent } from './components/rsvp/rsvp.component';
 import { EventComponent } from './components/event/event.component';
 import { RegistryComponent } from './components/registry/registry.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
+import { AccommodationComponent } from './components/accommodation/accommodation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MaintenanceComponent } from './components/maintenance/maintenance.compo
     RsvpComponent,
     EventComponent,
     RegistryComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    AccommodationComponent
   ],
   imports: [
     BrowserModule,

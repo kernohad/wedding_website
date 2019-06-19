@@ -1,0 +1,27 @@
+<div class="content" id="accommodation" fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="75" fxFlex.lt-lg="90" fxLayout="column" fxLayoutGap="1rem">
+    <h2>Accommodation</h2>
+    <p>We have a bunch of awesome hotels for you to stay at!</p>
+    
+
+    <div fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="16px grid">
+      <div *ngFor="let hotel of hotelList" fxFlex.gt-md="33.33333" fxFlex.md="50" fxFlex.lt-md="100">
+        <mat-card class="card">
+          <mat-card-header>
+            <mat-card-title class="title">{{hotel.title}}</mat-card-title>
+            <mat-card-subtitle>{{hotel.address}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/images/{{hotel.imgSrc}}" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              {{hotel.content}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a mat-stroked-button href="{{hotel.link}}">Book Now</a>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

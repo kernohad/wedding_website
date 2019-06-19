@@ -12,21 +12,25 @@ export class AppComponent {
   /**Header links */
   public links = [
     {
-      label: 'About Us',
-      anchor: 'about-us'
+      label: 'Event',
+      anchor: 'event'
     },
     {
-        label: 'Event',
-        anchor: 'event'
+      label: 'About Us',
+      anchor: 'about-us'
     },
     {
         label: 'RSVP',
         anchor: 'rsvp'
     },
     {
-        label: 'Registry',
-        anchor: 'registry'
-    }
+      label: 'Accommodation',
+      anchor: 'accommodation'
+    },
+    {
+      label: 'Registry',
+      anchor: 'registry'
+  },
   ];
 
   scrollPosition: number;
