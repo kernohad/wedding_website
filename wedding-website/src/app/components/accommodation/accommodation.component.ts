@@ -19,21 +19,21 @@ export class AccommodationComponent implements OnInit {
       title: 'Hyatt Place',
       address: '2401 Showtime Dr, Lansing, MI 48912',
       imgSrc: 'hyatt_place.jpg',
-      content: '~$180/night', 
+      content: 'Nothing Special. ~$180/night', 
       link: 'https://www.hyatt.com/en-US/hotel/michigan/hyatt-place-lansing-eastwood-towne-center/lanzl?src=corp_lclb_gmb_seo_nam_lanzl',
     },
     {
       title: 'Holiday Inn Express & Suites',
       address: '2924 West Rd, East Lansing, MI 48823',
       imgSrc: 'holiday_inn.jpg',
-      content: '~$155/night', 
-      link: 'https://www.ihg.com/holidayinnexpress/hotels/us/en/east-lansing/lanll/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-LANLL',
+      content: 'Special Wedding Deal. ~$144/night', 
+      link: 'https://www.hiexpress.com/redirect?path=hd&brandCode=EX&localeCode=en&hotelCode=LANLL&rateCode=IL4D4&_PMID=99502056&corpNum=100235822&cn=no&viewfullsite=true',
     },
     {
       title: 'Courtyard by Marriott',
       address: '2710 Lake Lansing Rd, Lansing, MI 48912',
       imgSrc: 'courtyard_marriott.jpg',
-      content: '~$155/night', 
+      content: 'Nothing Special. ~$155/night', 
       link: 'https://www.marriott.com/hotels/travel/lancy-courtyard-lansing/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2',
     }
   ];
