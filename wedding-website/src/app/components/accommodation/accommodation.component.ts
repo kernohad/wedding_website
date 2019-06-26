@@ -13,7 +13,7 @@ export class AccommodationComponent implements OnInit {
       address: '3320 Preyde Blvd, Lansing, MI 48912',
       imgSrc: 'fairfield_marriott.jpg',
       content: 'We have a hotel block here! $124/night', 
-      link: 'https://www.marriott.com/hotels/travel/landt-fairfield-inn-and-suites-lansing-at-eastwood/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2',
+      link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1561408039609&key=GRP&app=resvlink',
     },
     {
       title: 'Hyatt Place',
