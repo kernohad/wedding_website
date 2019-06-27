@@ -24,7 +24,7 @@ export class AppComponent {
         anchor: 'rsvp'
     },
     {
-      label: 'Accommodation',
+      label: 'Accommodations',
       anchor: 'accommodation'
     },
     {
